@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(74, 141, 240);
+}
+#drag-drop {
+  color: white;
+  padding: 20px;
+  background-color: rgba(15, 30, 53, .3);
+  text-align: center;
+}
+#drag-drop h2 {
+  font-size: 2em;
+  padding: 8px;
+}
+
+/*===== Drag'N'Drop styles =====*/
+
+.fill {
+  background-image: url('http://source.unsplash.com/random/150x150');
+  position: relative;
+  height: 120px;
+  width: 120px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.fill:hover {
+  //border-radius: 25px;
+}
+
+
+.empty {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin: 10px;
+  border: 3px rgb(192, 203, 220) solid;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.empty:hover {
+  transition: 200ms;
+}
+
+
+.hold {
+  border: solid rgb(116, 23, 103) 4px;
+}
+
+.hovered {
+  background: lightgray;
+  border: 3px dashed green;
+}
+
+.invisible {
+  display: none;
+}
