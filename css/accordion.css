@@ -3,11 +3,72 @@
   height: 444px;
   color: white;
   padding: 20px;
-  text-align: center;
+
 }
 .accordion_section h2 {
   color: whitesmoke;
   font-size: 2em;
   padding: 8px;
+  text-align: center;
+}
+
+
+.accordion_container {
+  width: 80%;
+  padding: 2px 11px;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.accordion-content p {
+ padding: 4px;
+ font-size: 1em;
+}
+
+button.accordion-button {
+  width: 100%;
+  background-color: whitesmoke;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 8px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+
+}
+
+button.accordion-button::after {
+  content: '\f055';
+  font-family: "fontawesome";
+  font-size: 14px;
+  float: right;
+  transform: rotateZ(0deg);
+  transition: 400ms;
+  color: darkorchid;
+}
+
+button.accordion-button.is-open::after {
+  content: "\f056";
+  transform: rotateZ(180deg);
+  transition: 400ms;
+  color: darkmagenta;
+}
+
+
+button.accordion-button:hover {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out;
 }
 
