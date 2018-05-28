@@ -1,3 +1,5 @@
+@import 'accordion.css';
+
 * {
   padding: 0;
   margin: 0;
@@ -17,7 +19,7 @@ body {
   padding: 8px;
 }
 
-/*===== Drag'N'Drop styles =====*/
+/*===== Drag 'N' Drop styles =====*/
 
 .fill {
   background-image: url('http://source.unsplash.com/random/150x150');
@@ -29,9 +31,6 @@ body {
   cursor: pointer;
 }
 
-.fill:hover {
-  //border-radius: 25px;
-}
 
 
 .empty {
